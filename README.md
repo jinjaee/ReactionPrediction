@@ -8,13 +8,21 @@ Open your terminal and download the project:
 Bash
 
 git clone https://github.com/jinjaee/ReactionPrediction.git
+
+
 cd ReactionPrediction
+
+
 2. Install Dependencies
+
+
 Install the required Python libraries for the AI and Server:
 
 Bash
 
 pip install fastapi uvicorn pandas numpy scikit-learn pymatgen matminer joblib
+
+
 3. Initialize the "Brain"
 Note: The trained model files (.pkl) are too large for GitHub, so you must generate them once on your machine. This takes about 5–10 minutes.
 
