@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Reaction Prediction</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <h1>Reaction Prediction</h1>
+    </header>
+
+    <main class="main-card">
+      <section class="rp-section">
+        <div class="rp-row">
+
+          <div class="reactant-block">
+            <span class="label">Reactant 1</span>
+            <div class="chem-box" id="r1-box"></div>
+            <div class="chem-label-bottom" id="r1-name">Empty</div>
+          </div>
+
+          <div class="symbol-block"><span class="symbol">+</span></div>
+
+          <div class="reactant-block">
+            <span class="label">Reactant 2</span>
+            <div class="chem-box" id="r2-box"></div>
+            <div class="chem-label-bottom" id="r2-name">Empty</div>
+          </div>
+
+          <div class="symbol-block"><span class="symbol">⟶</span></div>
+
+          <div class="product-block">
+            <span class="label label-product">Product</span>
+            <div class="chem-box" id="product-box">?</div>
+            <div class="chem-label-bottom" id="product-name">Unknown</div>
+            <div class="yield-pill"><span id="yield-text">0%</span></div>
+          </div>
+        </div>
+
+        <div class="other-products">
+          <span class="section-title">Other Products:</span>
+          <div class="other-box" id="other-products-box"></div>
+        </div>
+      </section>
+
+      <section class="examples-section">
+        <span class="section-title">Select Reactants:</span>
+        <div class="examples-container">
+          <div class="examples-grid">
+
+            <div class="example-cell" data-chem="H">
+              <img src="images/H2.png" alt="H" onerror="this.src='https://placehold.co/100?text=H'">
+              <span class="example-name">Hydrogen</span>
+            </div>
+
+            <div class="example-cell" data-chem="O">
+              <img src="images/O2.png" alt="O" onerror="this.src='https://placehold.co/100?text=O'">
+              <span class="example-name">Oxygen</span>
+            </div>
+
+            <div class="example-cell" data-chem="Na">
+              <img src="images/Na.png" alt="Na" onerror="this.src='https://placehold.co/100?text=Na'">
+              <span class="example-name">Sodium</span>
+            </div>
+
+            <div class="example-cell" data-chem="Cl">
+              <img src="images/Cl2.png" alt="Cl" onerror="this.src='https://placehold.co/100?text=Cl'">
+              <span class="example-name">Chlorine</span>
+            </div>
+
+            <div class="example-cell" data-chem="C"><img src="https://placehold.co/100?text=C"><span
+                class="example-name">Carbon</span></div>
+            <div class="example-cell" data-chem="Fe"><img src="https://placehold.co/100?text=Fe"><span
+                class="example-name">Iron</span></div>
+            <div class="example-cell" data-chem="Mg"><img src="https://placehold.co/100?text=Mg"><span
+                class="example-name">Mg</span></div>
+            <div class="example-cell" data-chem="S"><img src="https://placehold.co/100?text=S"><span
+                class="example-name">Sulfur</span></div>
+            <div class="example-cell" data-chem="Ca"><img src="https://placehold.co/100?text=Ca"><span
+                class="example-name">Calcium</span></div>
+            <div class="example-cell" data-chem="K"><img src="https://placehold.co/100?text=K"><span
+                class="example-name">Potassium</span></div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-info">
+        <h2>System Status</h2>
+        <p id="status-msg">Waiting for input...</p>
+      </div>
+      <div class="footer-icon">
+        <div class="atom">
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="orbit orbit-3"></div>
+          <div class="nucleus"></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
